@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Generate a <br />
+            <span class="heading-span">random password</span>
+        </h1>
+        <h2 class="subheading">Never use an insecure password again.</h2>
+        <button class="btn--generate" type="text" id="btn--generate">
+            <span class="btn--image">
+                <img src="lightning_bolt.png" alt="lightning bolt icon">
+            </span>
+            Generate passwords
+        </button>
+        <div class="length--section">
+            <h2 class="length--h2">Choose length:</h2>
+            <input type="radio" id="btn--length--5" name="btn--length" value="5">
+            <label for="btn--length--5" class="btn--length">5</label>
+            <input type="radio" id="btn--length--7" name="btn--length" value="7">
+            <label for="btn--length--7" class="btn--length">7</label>
+            <input type="radio" id="btn--length--9" name="btn--length" value="9">
+            <label for="btn--length--9" class="btn--length">9</label>
+            <input class="btn--length--many" type="radio" id="btn--length--many" name="btn--length" value="MANY"
+                checked>
+            <label for="btn--length--many" class="btn--length">MANY</label>
+        </div>
+        <hr>
+        <div class="wrapper ">
+            <input type="text" class="password-window" id="pass1">
+            <input type="text" class="password-window" id="pass2">
+            <input type="text" class="password-window" id="pass3">
+            <input type="text" class="password-window" id="pass4">
+        </div>
+    </div>
+    <script src="index.js "></script>
+</body>
+
+</html>
